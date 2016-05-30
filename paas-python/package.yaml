@@ -1,0 +1,29 @@
+descriptor-schema-version: "2.0"
+info:
+  author-link: "http://www.example.com/"
+  author-name: "YOUR NAME HERE"
+  description: "Description of your Application"
+  name: "app-name"
+  version: "0.1"
+
+app:
+  type: paas
+  resources:
+    profile: c1.small
+
+    network:
+     -
+       interface-name: eth0
+       ports:
+         tcp: [8000]
+
+    recommendations:
+      -
+        description: "This application can service 5 conncurrent clients with profile c1.small"
+        label: "Small Test Application"
+        profile: c1.small
+
+  startup:
+    runtime: python
+    runtime-version: 2.7.3
+    target: main.py
