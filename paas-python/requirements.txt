@@ -1,3 +1,0 @@
-# Place your python requirements in this document
-# Refer to https://pip.pypa.io/en/stable/reference/pip_install/#requirements-file-format for more information
-
